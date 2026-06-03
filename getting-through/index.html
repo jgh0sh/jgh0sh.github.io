@@ -38,6 +38,18 @@
         height: auto;
       }
 
+      .note-section {
+        margin: 32px 0;
+      }
+
+      .note-section p {
+        margin-bottom: 0.5em;
+      }
+
+      .note-frame {
+        overflow-x: auto;
+      }
+
       .note {
         max-width: 100%;
       }
@@ -54,6 +66,11 @@
         .top-row img {
           margin-bottom: 24px;
         }
+
+        .note {
+          max-width: none;
+          width: 720px;
+        }
       }
     </style>
   </head>
@@ -66,7 +83,13 @@
         <img src="../assets/images/outreach/tweet-note.png" alt="Tweet about a handwritten note">
       </div>
 
-      <img class="note" src="../assets/images/outreach/llm-error-note.png" alt="Reply to the LLM error note">
+      <section class="note-section">
+        <p>The reply.</p>
+
+        <div class="note-frame">
+          <img class="note" src="../assets/images/outreach/llm-error-note.png" alt="Reply to the LLM error note">
+        </div>
+      </section>
 
       <p>A little memorabilia and a few drafts from that night.</p>
 
