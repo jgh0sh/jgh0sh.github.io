@@ -16,7 +16,7 @@
     <meta name="twitter:title" content="Jay Ghosh">
     <meta name="twitter:description" content="Jay Ghosh">
     <meta name="twitter:image" content="https://jgh0sh.github.io/assets/social-preview.png">
-    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/site.css?v=2">
     <style>
       :root {
         --page-margin: 40px;
@@ -50,6 +50,10 @@
         white-space: nowrap;
       }
 
+      .contact a + a {
+        margin-left: 0.75em;
+      }
+
       ul {
         margin-top: 0;
       }
@@ -68,11 +72,16 @@
 
       @media (max-width: 560px) {
         :root {
-          --page-margin: 24px;
+          --page-margin: 18px;
         }
 
         h1 {
           font-size: 3.1em;
+        }
+
+        p,
+        li {
+          font-size: 0.95em;
         }
 
         .footer {
