@@ -24,11 +24,21 @@
 
       main {
         max-width: 720px;
+        margin: 0 auto;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
       }
 
       h1 {
-        margin-bottom: 0.4em;
-        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
         font-size: 4em;
         font-weight: 400;
         letter-spacing: -0.04em;
@@ -36,24 +46,56 @@
       }
 
       .contact {
-        margin-top: 0;
-        margin-bottom: 1em;
+        margin: 0.35em 0 0;
+        white-space: nowrap;
       }
 
       ul {
         margin-top: 0;
       }
 
+      .footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 24px;
+      }
+
+      .links {
+        margin: 0;
+        text-align: right;
+      }
+
+      @media (max-width: 560px) {
+        :root {
+          --page-margin: 24px;
+        }
+
+        h1 {
+          font-size: 3.1em;
+        }
+
+        .footer {
+          display: block;
+        }
+
+        .links {
+          text-align: left;
+        }
+      }
+
     </style>
   </head>
   <body>
     <main>
-      <h1>Jay Ghosh</h1>
+      <div class="header">
+        <h1>jay ghosh</h1>
 
-      <p class="contact">
-        <a href="https://linkedin.com/in/jgh0sh">LinkedIn</a>
-        <a href="https://x.com/jgh0sh">X</a>
-      </p>
+        <p class="contact">
+          <a href="https://linkedin.com/in/jgh0sh">LinkedIn</a>
+          <a href="https://x.com/jgh0sh">X</a>
+        </p>
+      </div>
 
       <p>I'm currently leading the effort to build <a href="https://research.nvidia.com/labs/gear/">GEAR</a>'s everything agent with <a href="https://jimfan.me/">Jim Fan</a> and <a href="https://www.linkedin.com/in/zhezhang-zhz/">Zhe Zhang</a>.</p>
 
@@ -62,16 +104,18 @@
       <ul>
         <li>Built agentic oncall for NVIDIA's internal compute.</li>
         <li>Added explainability + reliability to the Instagram ranking algorithm.</li>
-        <li>Did other internships building tooling for ~4k developers.</li>
+        <li>Did a few other internships building tooling for ~4k developers.</li>
       </ul>
 
-      <p>
-        <a href="getting-through/">getting through</a><br>
-        <a href="jensen/">jensen</a><br>
-        <a href="https://www.youtube.com/watch?v=E-O4tH7bmLI">talking with code</a><br>
-        <a href="https://github.com/openai/codex/issues/8368">how i thought about memory in codex</a><br>
-        <a href="many-questions-about-many-things/">many questions about many things</a>
-      </p>
+      <div class="footer">
+        <p class="links">
+          <a href="getting-through/">getting through</a><br>
+          <a href="jensen/">jensen</a><br>
+          <a href="https://www.youtube.com/watch?v=E-O4tH7bmLI">talking with code</a><br>
+          <a href="https://github.com/openai/codex/issues/8368">how i thought about memory in codex</a><br>
+          <a href="many-questions-about-many-things/">many questions about many things</a>
+        </p>
+      </div>
 
     </main>
   </body>
