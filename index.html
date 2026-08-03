@@ -32,16 +32,14 @@
         flex-direction: column;
         align-items: flex-end;
         text-align: right;
-        margin-bottom: 2em;
-        padding-bottom: 1em;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        margin-bottom: 2.5em;
       }
 
       h1 {
         margin: 0;
         font-size: 4em;
         font-weight: 400;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.07em;
         line-height: 1;
       }
 
@@ -58,8 +56,16 @@
         font-weight: 700;
       }
 
-      ul {
+      .intro,
+      .previous {
         margin-top: 0;
+        margin-bottom: 1em;
+      }
+
+      .experience {
+        margin-top: 0;
+        margin-bottom: 2.5em;
+        padding-left: 1.5em;
       }
 
       .footer {
@@ -67,6 +73,7 @@
         align-items: flex-end;
         justify-content: flex-end;
         gap: 24px;
+        margin-bottom: 0;
       }
 
       .links {
@@ -102,20 +109,20 @@
   <body>
     <main>
       <div class="header">
-        <h1>jay ghosh</h1>
+        <h1>Jay Ghosh</h1>
 
         <p class="contact">
           <a href="https://linkedin.com/in/jgh0sh">LinkedIn</a>
-          <span class="contact-separator" aria-hidden="true">·</span>
+          <span class="contact-separator" aria-hidden="true">/</span>
           <a href="https://x.com/jgh0sh">X</a>
         </p>
       </div>
 
-      <p>I'm currently leading the effort to build <a href="https://research.nvidia.com/labs/gear/">GEAR</a>'s "everything" agent with <a href="https://jimfan.me/">Jim Fan</a> and <a href="https://www.linkedin.com/in/zhezhang-zhz/">Zhe Zhang</a>.</p>
+      <p class="intro">I'm currently leading the effort to build <a href="https://research.nvidia.com/labs/gear/">GEAR</a>'s "everything" agent with <a href="https://jimfan.me/">Jim Fan</a> and <a href="https://www.linkedin.com/in/zhezhang-zhz/">Zhe Zhang</a>.</p>
 
-      <p>Previously, I:</p>
+      <p class="previous">Previously, I:</p>
 
-      <ul>
+      <ul class="experience">
         <li>built agentic oncall for NVIDIA's internal compute.</li>
         <li>added explainability and reliability to the Instagram ranking algorithm.</li>
         <li>worked a few more internships building and supporting tooling for ~4k developers.</li>
