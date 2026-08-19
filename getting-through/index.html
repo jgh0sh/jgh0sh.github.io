@@ -3,13 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>getting through - Jay Ghosh</title>
-    <link rel="stylesheet" href="../assets/site.css?v=3">
+    <title>getting through - jay ghosh</title>
+    <link rel="stylesheet" href="../assets/site.css?v=7">
     <style>
-      main {
-        max-width: 1180px;
-      }
-
       p {
         max-width: 620px;
         margin-top: 0;
@@ -19,12 +15,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
+        width: min(100%, 860px);
         align-items: start;
-        margin-bottom: 24px;
+        margin: 0 auto 24px;
       }
 
       figure {
-        margin: 0;
+        width: min(92%, 380px);
+        margin: 0 auto;
+      }
+
+      figure img {
+        width: 100%;
+        max-width: 100%;
       }
 
       figcaption {
@@ -40,16 +43,22 @@
       }
 
       .note-frame {
-        overflow-x: auto;
+        width: min(100%, 600px);
+        aspect-ratio: 800 / 286;
+        margin-inline: auto;
+        overflow: hidden;
+        border: 1px solid black;
       }
 
-      .note {
-        max-width: 100%;
+      .note-frame img {
+        width: 229.5%;
+        max-width: none;
+        margin: 0;
+        border: 0;
       }
 
       .drafts {
-        width: 100%;
-        max-width: 520px;
+        max-width: 480px;
       }
 
       @media (max-width: 760px) {
@@ -61,16 +70,12 @@
           margin-bottom: 24px;
         }
 
-        .note {
-          max-width: none;
-          width: 720px;
-        }
       }
     </style>
   </head>
   <body>
     <main>
-      <p>I wanted to figure out how to get greg's attention so:</p>
+      <p>it was my last week in SF and i was just in the mood of doing things, so:</p>
 
       <div class="top-row">
         <figure>
