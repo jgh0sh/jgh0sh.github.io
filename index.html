@@ -16,7 +16,7 @@
     <meta name="twitter:title" content="Jay Ghosh">
     <meta name="twitter:description" content="Jay Ghosh">
     <meta name="twitter:image" content="https://jgh0sh.github.io/assets/social-preview.png">
-    <link rel="stylesheet" href="assets/site.css?v=14">
+    <link rel="stylesheet" href="assets/site.css?v=15">
     <style>
       :root {
         --page-margin: 40px;
@@ -55,6 +55,11 @@
       .previous {
         margin-top: 0;
         margin-bottom: 1em;
+      }
+
+      .intro {
+        width: max-content;
+        max-width: min(900px, calc(100vw - (var(--page-margin) * 2)));
       }
 
       .acronym {
@@ -96,6 +101,11 @@
         p,
         li {
           font-size: 0.95em;
+        }
+
+        .intro {
+          width: auto;
+          max-width: 100%;
         }
 
         .footer {
