@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>getting through - jay ghosh</title>
-    <link rel="stylesheet" href="../assets/site.css?v=7">
+    <link rel="stylesheet" href="../assets/site.css?v=9">
     <style>
       p {
         max-width: 620px;
@@ -15,19 +15,33 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
-        width: min(100%, 860px);
+        width: min(calc(100vw - 64px), 1000px);
         align-items: start;
-        margin: 0 auto 24px;
+        margin: 0 0 24px 50%;
+        transform: translateX(-50%);
       }
 
       figure {
-        width: min(92%, 380px);
+        width: min(100%, 420px);
         margin: 0 auto;
       }
 
-      figure img {
+      .tweet-frame {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         width: 100%;
-        max-width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+      }
+
+      .tweet-frame img {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        margin: 0;
+        object-fit: cover;
+        object-position: top center;
       }
 
       figcaption {
@@ -43,7 +57,7 @@
       }
 
       .note-frame {
-        width: min(100%, 600px);
+        width: min(100%, 400px);
         aspect-ratio: 800 / 286;
         margin-inline: auto;
         overflow: hidden;
@@ -64,10 +78,28 @@
       @media (max-width: 760px) {
         .top-row {
           display: block;
+          width: 100%;
+          margin: 0 auto 24px;
+          transform: none;
         }
 
-        .top-row img {
-          margin-bottom: 24px;
+        figure {
+          width: min(92%, 380px);
+        }
+
+        .tweet-frame {
+          aspect-ratio: auto;
+          overflow: visible;
+        }
+
+        .tweet-frame img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+
+        .top-row figure + figure {
+          margin-top: 32px;
         }
 
       }
@@ -80,12 +112,16 @@
       <div class="top-row">
         <figure>
           <figcaption>what someone else sent</figcaption>
-          <img src="../assets/images/outreach/tweet-email.png" alt="Tweet about an email">
+          <div class="tweet-frame">
+            <img src="../assets/images/outreach/tweet-email.png" alt="Tweet about an email">
+          </div>
         </figure>
 
         <figure>
           <figcaption>...and what i did</figcaption>
-          <img src="../assets/images/outreach/tweet-note.png" alt="Tweet about a handwritten note">
+          <div class="tweet-frame">
+            <img src="../assets/images/outreach/tweet-note.png" alt="Tweet about a handwritten note">
+          </div>
         </figure>
       </div>
 
