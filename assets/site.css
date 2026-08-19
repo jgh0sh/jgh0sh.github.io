@@ -12,7 +12,7 @@ body {
   background: white;
   color: black;
   font-family: Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.45;
   text-transform: lowercase;
@@ -21,6 +21,11 @@ body {
 main {
   width: min(100%, var(--content-width));
   margin-inline: auto;
+}
+
+p,
+ul {
+  max-width: 550px;
 }
 
 img {
