@@ -7,137 +7,61 @@
     <link rel="stylesheet" href="../assets/site.css?v=15">
     <style>
       p {
-        max-width: 550px;
         margin-top: 0;
+        margin-bottom: 0.5em;
         margin-inline: auto;
         text-align: center;
       }
 
-      .top-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        width: min(calc(100vw - 64px), 1000px);
-        align-items: start;
-        margin: 0 0 24px 50%;
-        transform: translateX(-50%);
-      }
-
-      figure {
-        width: min(100%, 420px);
-        margin: 0 auto;
-      }
-
-      .tweet-frame {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+      .story-image {
         width: 100%;
+        max-width: 480px;
+      }
+
+      .tweet-crop {
+        width: 100%;
+        max-width: 480px;
         aspect-ratio: 1;
-        overflow: hidden;
-      }
-
-      .tweet-frame img {
-        width: 100%;
-        max-width: none;
-        height: 100%;
-        margin: 0;
-        object-fit: cover;
-        object-position: top center;
-      }
-
-      figcaption {
-        margin-bottom: 0.5em;
-      }
-
-      .note-section {
-        margin: 32px 0;
-      }
-
-      .note-section p {
-        margin-bottom: 0.5em;
-      }
-
-      .note-frame {
-        width: min(100%, 400px);
-        aspect-ratio: 800 / 286;
         margin-inline: auto;
         overflow: hidden;
         border: 1px solid black;
       }
 
-      .note-frame img {
-        width: 229.5%;
+      .tweet-crop img {
+        width: 100%;
         max-width: none;
+        height: 100%;
         margin: 0;
         border: 0;
+        object-fit: cover;
+        object-position: top center;
       }
 
-      .drafts {
-        max-width: 480px;
+      .memorabilia {
+        margin-top: 32px;
       }
 
-      @media (max-width: 760px) {
-        .top-row {
-          display: block;
-          width: 100%;
-          margin: 0 auto 24px;
-          transform: none;
-        }
-
-        figure {
-          width: min(92%, 380px);
-        }
-
-        .tweet-frame {
-          aspect-ratio: auto;
-          overflow: visible;
-        }
-
-        .tweet-frame img {
-          width: 100%;
-          height: auto;
-          object-fit: contain;
-        }
-
-        .top-row figure + figure {
-          margin-top: 32px;
-        }
-
+      .step-title {
+        margin-top: 32px;
       }
     </style>
   </head>
   <body>
     <main>
-      <p>it was my last week in SF and i was just in the mood of doing things, so:</p>
-
-      <div class="top-row">
-        <figure>
-          <figcaption>what someone else sent</figcaption>
-          <div class="tweet-frame">
-            <img src="../assets/images/outreach/tweet-email.png" alt="Tweet about an email">
-          </div>
-        </figure>
-
-        <figure>
-          <figcaption>...and what i did</figcaption>
-          <div class="tweet-frame">
-            <img src="../assets/images/outreach/tweet-note.png" alt="Tweet about a handwritten note">
-          </div>
-        </figure>
+      <p>i saw greg was annoyed by an email</p>
+      <div class="tweet-crop">
+        <img src="../assets/images/outreach/tweet-email.png" alt="Original tweet showing the email context">
       </div>
 
-      <section class="note-section">
-        <p>and i got a reply!</p>
+      <p class="step-title">so what i did</p>
+      <div class="tweet-crop">
+        <img src="../assets/images/outreach/tweet-note.png" alt="Tweet about the handwritten note">
+      </div>
 
-        <div class="note-frame">
-          <img class="note" src="../assets/images/outreach/llm-error-note.png" alt="Reply to the LLM error note">
-        </div>
+      <section class="memorabilia">
+        <p>a little memorabilia and a few drafts</p>
+        <img class="story-image" src="../assets/images/outreach/drafts.jpg" alt="Draft notes and memorabilia">
       </section>
-
-      <p>a little memorabilia and a few drafts:</p>
-
-      <img class="drafts" src="../assets/images/outreach/drafts.jpg" alt="Draft notes from that night">
     </main>
   </body>
 </html>
