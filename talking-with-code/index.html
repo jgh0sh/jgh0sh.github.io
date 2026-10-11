@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talking With Code - Jay Ghosh</title>
+    <link rel="stylesheet" href="../assets/site.css?v=15">
+    <style>
+      main {
+        width: min(100%, 720px);
+      }
+
+      .intro,
+      .status {
+        max-width: 550px;
+        margin-inline: auto;
+        text-align: center;
+      }
+
+      .intro {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      .video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 1px solid black;
+      }
+
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .status {
+        margin-top: 16px;
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 560px) {
+        .intro {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="intro">I realized how much of a pain it was to type out what I wanted Codex to do so I decided to experiment with a voice interface. I named it Pheme.</p>
+
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/E-O4tH7bmLI"
+          title="Talking With Code"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p class="status">(now in prod across <a href="https://learn.chatgpt.com/docs/changelog">ChatGPT</a>)</p>
+    </main>
+  </body>
+</html>
