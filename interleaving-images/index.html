@@ -6,44 +6,32 @@
     <title>Models Doing More With Images - Jay Ghosh</title>
     <link rel="stylesheet" href="../assets/site.css?v=15">
     <style>
-      .intro {
-        max-width: 550px;
-        margin: 0 auto 24px;
-        text-align: center;
-      }
-
       .status {
-        display: block;
-        margin-top: 0.75em;
+        max-width: 550px;
+        margin: 24px auto 0;
+        text-align: center;
       }
 
       .comparison {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
-        width: min(calc(100vw - 64px), 1000px);
+        width: min(calc(100vw - 64px), 1120px);
         align-items: start;
         margin-left: 50%;
         transform: translateX(-50%);
       }
 
       figure {
-        width: min(100%, 500px);
+        width: min(100%, 548px);
         margin: 0 auto;
-      }
-
-      figcaption {
-        margin-bottom: 0.5em;
-        min-height: 1.45em;
       }
 
       .comparison img {
         width: 100%;
         max-width: 100%;
-        aspect-ratio: 1357 / 1502;
-        object-fit: contain;
-        object-position: top;
-        background: white;
+        height: auto;
+        display: block;
       }
 
       @media (max-width: 840px) {
@@ -62,22 +50,17 @@
   </head>
   <body>
     <main>
-      <p class="intro">
-        Models can already process and understand images we give them, but I wish they'd interleave parts of those images in their responses to better their answers.
-        <span class="status">(now in <a href="https://openai.com/index/gpt-6-for-everyone/">ChatGPT</a> as Intelligent UI)</span>
-      </p>
-
       <div class="comparison">
         <figure>
-          <figcaption>What ChatGPT Responded With</figcaption>
-          <img src="../assets/images/interleaving-images/chatgpt-response.png?v=2" alt="A ChatGPT response describing how to thread a sewing machine">
+          <img src="../assets/images/interleaving-images/concept-post.png" alt="A post showing an envisioned ChatGPT response that interleaves image details with instructions">
         </figure>
 
         <figure>
-          <figcaption>what i'm thinking of</figcaption>
-          <img src="../assets/images/interleaving-images/envisioned-response.png?v=2" alt="An envisioned response that interleaves visual instructions with text">
+          <img src="../assets/images/interleaving-images/chatgpt-reference-post.png" alt="A reference post showing ChatGPT's response to the same sewing-machine question">
         </figure>
       </div>
+
+      <p class="status">(now in <a href="https://openai.com/index/gpt-6-for-everyone/">ChatGPT</a> as Intelligent UI)</p>
     </main>
   </body>
 </html>
